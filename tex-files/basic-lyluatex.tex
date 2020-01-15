@@ -1,0 +1,26 @@
+\documentclass{scrartcl}
+\usepackage{mecLatexBasic}
+
+% Package to integrate LilyPond for music examples
+\usepackage{lyluatex}
+
+\begin{document}
+
+\Blindtext[1]
+
+% Include LilyPond code in an environment
+\begin{figure}[h]
+\begin{lilypond}
+\new Staff \with {
+    instrumentName = ""
+} \relative {
+  \tempo "Adagio"
+  \repeat unfold 12 { c' d e d }
+}
+\end{lilypond}
+\caption{Slightly protruding into the left margin}
+\end{figure}
+
+\Blindtext[1]
+
+\end{document}
