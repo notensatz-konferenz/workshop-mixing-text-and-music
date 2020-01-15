@@ -277,3 +277,5 @@ TSWLatexianTemp*
 
 tex-files/tmp-ly/*
 *.pdf
+*.eps
+*-systems.*
