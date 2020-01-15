@@ -1,0 +1,16 @@
+\documentclass{scrartcl}
+% Factor out common stuff to a style file / package
+\usepackage{mecLatexBasic}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+\section{Inclusion of Fullpage Images}
+
+\Blindtext[1]
+
+% Include all pages of a given PDF document
+\includepdf[pages=-]{media/schubert-d545}
+
+\end{document}
