@@ -1,0 +1,13 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mecAfterpage}
+
+\usepackage{pdfpages}
+\usepackage{afterpage}
+
+% Create a command that can be used in the document
+% It has two arguments, one of them optional
+% - page(s) to be used (default: - (= all))
+% - file to be included
+\newcommand{\includeNext}[2][-]{%
+    \afterpage{\includepdf[pages=#1]{#2}}%
+}
