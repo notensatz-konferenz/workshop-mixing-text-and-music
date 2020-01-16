@@ -279,3 +279,6 @@ tex-files/tmp-ly/*
 *.pdf
 *.eps
 *-systems.*
+*.html
+*.loxmp
+*.midi
