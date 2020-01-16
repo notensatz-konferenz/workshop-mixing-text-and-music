@@ -1,0 +1,54 @@
+\documentclass{scrartcl}
+\usepackage{mecLatexBasic}
+
+\usepackage[includepaths=/home/uliska/git/oll-lib]{lyluatex}
+\usepackage{musicexamples}
+\setmainfont{Old Standard}
+
+\begin{document}
+
+\section*{Handling Music Examples}
+
+\Blindtext[1]
+
+\begin{musicExampleNonFloat}
+\lilypondfile[print-only=1]{media/bach/bwv1017}
+\caption{Automatic example numbering}
+\label{xmp:first-example}
+\end{musicExampleNonFloat}
+
+\Blindtext[1]
+
+\begin{musicExampleNonFloat}
+\lilypondfile[print-only=2]{media/bach/bwv1017}
+\caption{Arbitrary systems from a score without recompilation}
+\label{xmp:second-example}
+\end{musicExampleNonFloat}
+
+\Blindtext[1]
+
+\begin{musicExampleNonFloat}
+\lilypondfile[print-only=3]{media/bach/bwv1017}
+\caption{Arbitrary systems from a score without recompilation}
+\label{xmp:second-example}
+\end{musicExampleNonFloat}
+
+\Blindtext[1]
+
+\begin{musicExampleNonFloat}
+\lilypondfile[print-only=4]{media/bach/bwv1017}
+\caption{Arbitrary systems from a score without recompilation}
+\label{xmp:second-example}
+\end{musicExampleNonFloat}
+
+\Blindtext[1]
+
+\begin{musicExampleNonFloat}
+\lilypondfile[print-only=5]{media/bach/bwv1017}
+\caption{Arbitrary systems from a score without recompilation}
+\label{xmp:second-example}
+\end{musicExampleNonFloat}
+
+\listofmusicexamples
+
+\end{document}
