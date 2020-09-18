@@ -3,6 +3,7 @@
 \usepackage{mecLatexBasic}
 
 \usepackage{pdfpages}
+\usepackage{afterpage}
 
 \begin{document}
 
@@ -11,6 +12,14 @@
 \Blindtext[2]
 
 % Include all pages of a given PDF document
-\includepdf[pages=-]{media/schubert-d545}
+\afterpage{\includepdf[pages=-]{media/schubert-d545}}
+
+\bigskip
+
+Here is the music example
+
+\bigskip
+
+\Blindtext[6]
 
 \end{document}

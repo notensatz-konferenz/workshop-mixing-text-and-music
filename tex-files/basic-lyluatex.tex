@@ -1,18 +1,20 @@
-\documentclass{scrartcl}
+\documentclass[DIV=5]{scrartcl}
 \usepackage{mecLatexBasic}
 
 % Package to integrate LilyPond for music examples
-\usepackage{lyluatex}
+\usepackage[pass-fonts]{lyluatex}
+\setmainfont{Cantarell}
 
 \begin{document}
 
+\scriptsize
 \Blindtext[1]
 
 % Include LilyPond code in an environment
 \begin{figure}[h]
 \begin{lilypond}
 \new Staff \with {
-    instrumentName = ""
+    instrumentName = "Xyl."
 } \relative {
   \tempo "Adagio"
   \repeat unfold 12 { c' d e d }
